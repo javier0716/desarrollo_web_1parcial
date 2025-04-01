@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro 4 - Formularios HTML</title>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        main {
+            width: 70vw;
+            margin: auto;
+
+        }
+        .form-element >label {
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+        .form-element > input, .form-element >textarea {
+            border: none;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.5rem;
+            border-radius: 7px;
+            background-color: rgb(204, 198, 198);
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formularios HTML</h1>
+
+        <section>
+            <h2>Formulario Simple</h2>
+
+            <form>
+                <div>
+                    <label for="nombre-input"> Nombre</label>
+                    <input id="nombre-input" name="nombre" required type="text">
+                </div>
+                <div>
+                    <label for="apellido-input">Apellido</label>
+                    <input id="apellido-input" name="apellido"required type="text">
+                </div>
+
+                <button type="submit"> Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Tipos de Datos en Formularios</h2>
+
+            <form>
+                <div class="form-element">
+                    <label for="texto-input">Texto</label>
+                    <input id="texto-input" name="texto" type="text">
+                </div class=>
+                <div class="form-element">
+                    <label for="numero-input">Numero</label>
+                    <input id="numero-input" name="numero" type="number" step="0.1" min="10" max="50">
+                </div>
+                <div class="form-element">
+                    <label for="email-input">Email</label>
+                    <input id="email-input" name="email" type="email">
+                </div>
+                <div class="form-element">
+                    <label for="password-input">Password</label>
+                    <input id="password-input" name="password" type="password">
+                </div>
+                <div class="form-element">
+                    <label for="date-input">Fecha</label>
+                    <input id="date-input" name="date" type="date">
+                </div>
+                <div class="form-element">
+                    <label for="fechahora-input">Fecha y Hora</label>
+                    <input id="fechahora-input" name="fechahora" type="datetime">
+                </div>
+                <div class="form-element">
+                    <label for="hora-input">Hora</label>
+                    <input id="hora-input" name="hora" type="time">
+                </div>
+                <div class="form-element">
+                    <label for="textarea">Textarea</label>
+                    <textarea name="textarea" id="textarea" rows="10"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
